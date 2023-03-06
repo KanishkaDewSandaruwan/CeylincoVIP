@@ -8,28 +8,73 @@
     android:backgroundTint="#FFE600"
     tools:context=".StartApp" >
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="208dp"
-        android:layout_height="196dp"
-        android:layout_marginTop="32dp"
-        android:src="@mipmap/vip_logo_foreground"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+    <Button
+        android:id="@+id/full_in2"
+        android:layout_width="305dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#FFF321"
+        android:text="Third Party"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/full_in"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/full_in"
+        app:layout_constraintTop_toBottomOf="@+id/logoview"
+        app:layout_constraintVertical_bias="0.643" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="24dp"
-        android:background="@android:color/transparent"
-        android:text="dealer"
-        android:textColor="#0B0B0B"
-        app:iconTint="#000000"
+        android:id="@+id/buttondealer"
+        android:layout_width="97dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#FFF321"
+        android:shadowColor="@color/black"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:text="Dealer"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:cornerRadius="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1pt" />
+
+    <ImageView
+        android:id="@+id/logoview"
+        android:layout_width="289dp"
+        android:layout_height="241dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.218"
+        app:srcCompat="@mipmap/vip_logo_foreground" />
+
+    <Button
+        android:id="@+id/full_in"
+        android:layout_width="305dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#FFF321"
+        android:text="Full Insurance"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/full_in2"
+        app:layout_constraintEnd_toEndOf="@+id/logoview"
+        app:layout_constraintStart_toStartOf="@+id/logoview"
+        app:layout_constraintTop_toBottomOf="@+id/logoview"
+        app:layout_constraintVertical_bias="0.3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
