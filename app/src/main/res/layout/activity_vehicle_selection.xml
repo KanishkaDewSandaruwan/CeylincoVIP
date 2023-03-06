@@ -41,10 +41,23 @@
         app:layout_constraintVertical_bias="0.022" />
 
     <ImageButton
+        android:id="@+id/cycleImg"
+        android:layout_width="126dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="Motor Cycle Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseVehicle"
+        app:srcCompat="@drawable/asset_5"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
         android:id="@+id/vanImg"
         android:layout_width="140dp"
         android:layout_height="78dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#00FFFFFF"
         android:contentDescription="Bus Button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,37 +67,11 @@
         app:srcCompat="@drawable/asset_6" />
 
     <ImageButton
-        android:id="@+id/cycleImg"
-        android:layout_width="126dp"
-        android:layout_height="79dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="Motor Cycle Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chooseVehicle"
-        app:srcCompat="@drawable/asset_5"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageButton
-        android:id="@+id/wheelImg"
-        android:layout_width="135dp"
-        android:layout_height="92dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="Three Wheel Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toEndOf="@+id/cycleImg"
-        app:layout_constraintTop_toBottomOf="@+id/chooseVehicle"
-        app:srcCompat="@drawable/asset_1" />
-
-    <ImageButton
         android:id="@+id/carImg"
         android:layout_width="138dp"
         android:layout_height="80dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="#03FFFFFF"
         android:contentDescription="Car Button"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,7 +82,7 @@
         android:id="@+id/dbusImg"
         android:layout_width="196dp"
         android:layout_height="59dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#00FFFFFF"
         android:contentDescription="DBus Buttton"
@@ -110,27 +97,24 @@
         android:layout_width="137dp"
         android:layout_height="87dp"
         android:layout_marginStart="40dp"
-        android:layout_marginBottom="55dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#00FFFFFF"
         android:contentDescription="Tracktor Button"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lorryImg"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/asset__2" />
 
     <ImageButton
         android:id="@+id/imageButton8"
         android:layout_width="165dp"
         android:layout_height="83dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#00FFFFFF"
         android:contentDescription="DoButton"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toEndOf="@+id/tractImg"
         app:layout_constraintTop_toBottomOf="@+id/dbusImg"
-        app:layout_constraintVertical_bias="0.457"
         app:srcCompat="@drawable/asset__3" />
 
     <ImageButton
@@ -138,11 +122,38 @@
         android:layout_width="151dp"
         android:layout_height="86dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="36dp"
         android:backgroundTint="#03FFFFFF"
         android:contentDescription="Lorry Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/carImg"
         app:srcCompat="@drawable/asset_4" />
+
+    <ImageButton
+        android:id="@+id/wheelImg"
+        android:layout_width="135dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="Three Wheel Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/cycleImg"
+        app:layout_constraintTop_toBottomOf="@+id/chooseVehicle"
+        app:srcCompat="@drawable/asset_1" />
+
+    <ImageButton
+        android:id="@+id/info_btn"
+        android:layout_width="81dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#03FFFFFF"
+        android:contentDescription="Information Icon"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/information_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
