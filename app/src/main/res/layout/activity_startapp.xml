@@ -9,7 +9,7 @@
     tools:context=".StartApp" >
 
     <Button
-        android:id="@+id/full_in2"
+        android:id="@+id/third_p"
         android:layout_width="305dp"
         android:layout_height="66dp"
         android:backgroundTint="#FFF321"
@@ -71,7 +71,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:cornerRadius="10pt"
-        app:layout_constraintBottom_toTopOf="@+id/full_in2"
+        app:layout_constraintBottom_toTopOf="@+id/third_p"
         app:layout_constraintEnd_toEndOf="@+id/logoview"
         app:layout_constraintStart_toStartOf="@+id/logoview"
         app:layout_constraintTop_toBottomOf="@+id/logoview"
