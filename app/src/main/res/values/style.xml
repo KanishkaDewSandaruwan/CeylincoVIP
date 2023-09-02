@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TextInputLayout Style -->
+    <style name="App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="hintTextColor">@color/colorYellow</item>
+    </style>
+
+    <!-- TextInputEditText Style -->
+    <style name="App.TextInputEditText" parent="Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColorHint">@color/colorYellow</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/colorBlack</item>
+        <item name="android:textColor">@color/colorYellow</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="cornerRadius">40dp</item>
+    </style>
+
+</resources>

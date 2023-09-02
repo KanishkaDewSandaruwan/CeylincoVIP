@@ -2,15 +2,102 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/vip_logo_foreground"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.CeylincoVIP"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".AboutUS"
+            android:exported="false" />
+        <activity
+            android:name=".AddBankAccount"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentMethod"
+            android:exported="false" />
+        <activity
+            android:name=".CheckEmailOTP"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeBankDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeEmail"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".Account"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileEdit"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".NewPassword"
+            android:exported="false" />
+        <activity
+            android:name=".CheckOTP"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmDealreRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyDetails"
+            android:exported="false" />
+        <activity
+            android:name=".DealerRegisterPersonalInformation"
+            android:exported="false" />
+        <activity
+            android:name=".DealerRegister"
+            android:exported="false" />
+        <activity
+            android:name=".DealerMain"
+            android:exported="false" />
+        <activity
+            android:name=".DealerLogin"
+            android:exported="false" />
+        <activity
+            android:name=".PersonalInformation"
+            android:exported="false" />
+        <activity
+            android:name=".Waiting"
+            android:exported="false" />
+        <activity
+            android:name=".CRImageUpload"
+            android:exported="false" />
+        <activity
+            android:name=".InsurenceInformation"
+            android:exported="false" />
+        <activity
+            android:name=".VehicleAdditionalInformation"
+            android:exported="false" />
+        <activity
+            android:name=".VehicleInformation"
+            android:exported="false" />
         <activity
             android:name=".Vehicle_Selection"
             android:exported="false">
@@ -29,7 +116,7 @@
         </activity>
         <activity
             android:name=".StartApp"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>

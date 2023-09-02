@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">Ceylinco VIP</string>
+    <string name="app_name" translatable="false">Policy Collector</string>
+    <string name="vehicle_information" translatable="false">Insurence Information</string>
+    <string name="title_activity_test" translatable="false">Test</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    <string name="cr_photo" translatable="false">CR Photo</string>
+    <string name="purpose_of_use" translatable="false">Purpose Of Use</string>
+    <string name="vehicle_photo" translatable="false">Vehicle Photo</string>
+    <string name="previous_insurance_card" translatable="false">Previous Insurance Card</string>
+    <string name="add" translatable="false">ADD</string>
+    <string name="back" translatable="false">BACK</string>
 </resources>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/artboard_1"
+    tools:context=".VehicleInformation">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/vehicle_information"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonsLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/buttonsLayout">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Engine No"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/addVehicleRegNo"
+                app:layout_constraintTop_toBottomOf="@+id/addVehicleRegNo" />
+
+            <EditText
+                android:id="@+id/addEnginNo"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#1C7016"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@id/addmodal"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@id/addmodal"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <EditText
+                android:id="@+id/addVehicleRegNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1C7016"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/addEnginNo"
+                app:layout_constraintStart_toStartOf="@id/addmodal"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Vehicle Registration Number"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/addEnginNo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Chassis No"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/addChasisNo"
+                app:layout_constraintTop_toBottomOf="@+id/addEnginNo" />
+
+            <EditText
+                android:id="@+id/addChasisNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1C7016"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@id/addmodal"
+                app:layout_constraintStart_toStartOf="@id/addmodal"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Make and Model"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/addmodal"
+                app:layout_constraintTop_toBottomOf="@+id/addChasisNo" />
+
+            <EditText
+                android:id="@+id/addmodal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1C7016"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/yearSpinner"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Year Of Make"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/yearSpinner"
+                app:layout_constraintTop_toBottomOf="@+id/addmodal" />
+
+
+            <Spinner
+                android:id="@+id/yearSpinner"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="#1C7016"
+                android:dropDownWidth="match_parent"
+                android:dropDownSelector="@color/backgroundColor"
+                android:popupBackground="@drawable/artboard_1"
+                android:spinnerMode="dialog"
+                android:textColor="#FFFEFC"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnPreviousSetp01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#1C7016"
+            android:backgroundTintMode="add"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:text="BACK"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:strokeColor="#1C7016"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/btnNextSetp03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#1C7016"
+            android:backgroundTintMode="add"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:text="NEXT"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:strokeColor="#1C7016"
+            app:strokeWidth="2dp" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
